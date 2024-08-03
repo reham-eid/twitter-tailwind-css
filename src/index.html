@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+    <link
+      rel="icon"
+      href="https://www.shutterstock.com/shutterstock/photos/2343256129/display_1500/stock-vector-logo-for-the-social-networking-site-x-formerly-known-as-twitter-editorial-vector-2343256129.jpg"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-white dark:bg-dim-900">
+    <!-- Container  -->
+    <div class="container mx-auto h-screen flex xl:max-w-[1200px]">
+      <!-- Left  -->
+      <div class="xl:w-1/5 h-full xl:pr-4 flex flex-col">
+        <!-- xl:w-1/5 >> 20% -->
+        <!-- Logo  -->
+        <a href="" class="link-active my-2">
+          <i class="fa-brands fa-twitter text-4xl"></i>
+        </a>
+        <!-- Nav  -->
+        <nav class="mt-5">
+          <a href="" class="link-active mb-8">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="icon">Home</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-hashtag text-xl"></i>
+            <span class="icon">Explore</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-bell text-xl"></i>
+            <span class="icon">Notification</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-envelope text-xl"></i>
+            <span class="icon">Messages</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-bookmark text-xl"></i>
+            <span class="icon">Bookmarks</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-list-ul text-xl"></i>
+            <span class="icon">Lists</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-user text-xl"></i>
+            <span class="icon">Profile</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-ellipsis text-xl"></i>
+            <span class="icon">More</span>
+          </a>
+        </nav>
+        <!-- Button  -->
+        <button
+          class="w-11 h-11 mx-auto xl:w-full bg-blue-400 flex items-center justify-center font-bold text-white rounded-full"
+        >
+          <i class="fa-solid fa-feather text-xl block xl:hidden"></i>
+          <span class="icon xl:ml-0">Tweet</span>
+        </button>
+        <!-- User  -->
+        <div
+          class="w-14 mx-auto mt-auto xl:w-full flex items-center justify-between mb-2 p-2 rounded-full cursor-pointer"
+        >
+          <img
+            src="https://avatars.githubusercontent.com/u/144877614?s=400&u=419bd295fe44eefeb3387c7f9a8b8ea97f0957d9&v=4"
+            alt="avatar"
+            class="w-10 h-10 rounded-full"
+          />
+          <div class="ml-1 hidden xl:flex flex-col">
+            <h4 class="text-sm font-bold text-gray-800 dark:text-white">
+              Reham Eid
+            </h4>
+            <p class="text-sm text-gray-400">rehameid2001@gmail.com</p>
+          </div>
+          <i
+            class="fa-solid fa-chevron-down text-xs hidden itens-center text-gray-800 xl:flex xl:ml-1 mb-4 dark:text-white"
+          ></i>
+        </div>
+      </div>
+      <!-- Left  -->
+
+      <!-- Middle  -->
+      <div class="w-full xl:w-1/2 h-screen overflow-y-auto">
+        <!-- Sticky Header -->
+        <div
+          class="sticky top-0 flex justify-between items-center border py-3 px-4 bg-white dark:bg-dim-900 border-gray-200 dark:border-gray-700"
+        >
+          <h4 class="text-gray-800 dark:text-gray-100 font-bold">Home</h4>
+          <i class="fa-brands fa-twitter text-lg text-blue-400"></i>
+        </div>
+        <!-- Sticky Header -->
+        <!-- Tweet Box  -->
+        <div class="border pb-3 border-gray-200 dark:border-gray-700">
+          <!-- Upper  -->
+          <div class="p-4 flex">
+            <img
+              src="https://avatars.githubusercontent.com/u/144877614?s=400&u=419bd295fe44eefeb3387c7f9a8b8ea97f0957d9&v=4"
+              alt="avatar"
+              class="w-10 h-10 rounded-full"
+            />
+            <textarea
+              class="text-sm dark:text-white p-2 text-gray-900 w-full h-16 bg-transparent focus:outline-none resize-none"
+              placeholder="What's happening?"
+            ></textarea>
+          </div>
+          <!-- Lower  -->
+          <div class="flex p-4 w-full justify-between items-center">
+            <!-- icons  -->
+            <!-- <a class="text-blue-400 rounded-full flex gap-3 px-2">
+              <1 class="fa-solid fa-image text-lg"> </i>
+            </a> and repeat (this correct than div)-->
+            <div class="text-blue-400 rounded-full flex gap-3 px-2">
+              <a class="fa-solid fa-image text-lg"></a>
+              <a class="fa-brands fa-git text-lg"></a>
+              <a class="fa-solid fa-square-poll-horizontal text-lg"></a>
+              <a class="fa-solid fa-face-smile text-lg"></a>
+              <a class="fa-solid fa-business-time text-lg"></a>
+            </div>
+            <!-- icons  -->
+            <!-- button  -->
+            <a
+              class="px-6 mr-1 flex justify-center items-center ml-auto bg-blue-400 font-bold text-white rounded-full"
+            >
+              Tweet
+            </a>
+            <!-- button  -->
+          </div>
+        </div>
+        <!-- Tweet Box  -->
+        <!-- Show Tweets  -->
+        <div
+          class="text-center py-2 bg-white dark:bg-dim-900 border cursor-pointer text-gray-500 text-sm border-gray-200 dark:border-gray-700"
+        >
+          Show 10 Tweets
+        </div>
+        <!-- Show Tweets  -->
+        <!-- Tweets  -->
+        <div
+          class="pb-4 border border-gray-200 dark:border-gray-700 cursor-pointer"
+        >
+          <!-- Upper  -->
+          <div class="p-4 pb-0 flex">
+            <!-- User Image  -->
+            <img
+              src="https://avatars.githubusercontent.com/u/144877614?s=400&u=419bd295fe44eefeb3387c7f9a8b8ea97f0957d9&v=4"
+              alt="avatar"
+              class="w-10 h-10 rounded-full"
+            />
+            <!-- User Info  & Date-->
+            <p
+              class="flex flex-shrink-0 ml-2 items-center font-medium text-gray-800 dark:text-white"
+            >
+              Reham Eid
+              <span class="ml-2 text-sm text-gray-400"
+                >@rehameid2001 . Aug 2</span
+              >
+            </p>
+          </div>
+
+          <!-- Lower  -->
+          <div class="pl-8 xl:pl-16 pr-4">
+            <!-- text of tweet  -->
+            <p class="w-auto font-medium text-gray-800 dark:text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              reiciendis accusamus sapiente,
+              <br />dolor dignissimos aperiam facilis illo sunt. Ex delectus
+              soluta quasi maiores aspernatur, odio possimus explicabo ad
+              perferendis quaerat.
+            </p>
+            <!-- image of tweet -->
+            <img
+              class="rounded-2xl border border-gray-600 my-3 mr-2 w-full"
+              src="https://www.startpage.com/av/proxy-image?piurl=http%3A%2F%2Fclipart-library.com%2Fnew_gallery%2F93620_computer-clipart-png.png&sp=1722611435Ta87d7b5dfadd99560590261f5db8fe8d8715d16e9e80827562d49cd1d98276ba"
+              alt=""
+            />
+            <!-- tweet icons  -->
+            <a
+              class="text-gray-800 dark:text-gray-400 flex justify-around items-center w-full"
+              href=""
+            >
+              <div class="main-hover">
+                <i class="fa-solid fa-comment mr-2 text-lg"></i>
+                10.3 k
+              </div>
+              <div class="main-hover">
+                <i class="fa-solid fa-retweet mr-2 text-lg"></i>
+                300
+              </div>
+              <div class="main-hover">
+                <i class="fa-solid fa-heart mr-2 text-lg"></i>
+                500
+              </div>
+              <div class="main-hover">
+                <i class="fa-solid fa-share mr-2 text-lg"></i>
+                80
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Tweets  -->
+        <!-- Toggler  -->
+        <div
+          class="py-2 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-dim-300"
+        >
+          <div
+            class="text-center p-6 bg-white dark:bg-dim-900 border-b border-t border-gray-200 dark:border-dim-200"
+          >
+            <h3 class="text-2xl font-bold mb-2 text-dim-900 dark:text-gray-400">
+              Customize your view
+            </h3>
+            <p class="text-gray-500 mb-5 text-sm">
+              Manage your font size, color and background. These settings affect
+              all the Twitter account in the browser.
+            </p>
+            <!-- button to switch dark mode -->
+            <a
+              href="javascript:void(0)"
+              onclick="document.querySelector('html').classList.toggle('dark')"
+              class="mx-auto w-11 h-11 xl:w-48 flex justify-center items-center py-3 text-white font-bold rounded-full bg-blue-400 hover:scale-125"
+            >
+              <i class="fa-solid fa-cloud-moon block xl:hidden text-lg"></i>
+              <span class="hidden xl:block font-bold"> Toggle Dark Mode </span>
+            </a>
+          </div>
+        </div>
+        <!-- Toggler -->
+        <!-- Spinner  -->
+        <div class="p-4 border border-gray-200 dark:border-gray-700">
+          <svg class="w-8 h-8 mx-auto animate-spin">
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="stroke: rgb(29, 161, 242); opacity: 0.2"
+            ></circle>
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="
+                stroke: rgb(29, 161, 242);
+                stroke-dasharray: 80;
+                stroke-dashoffset: 60;
+              "
+            ></circle>
+          </svg>
+        </div>
+        <!-- Spinner  -->
+      </div>
+      <!-- Middle  -->
+
+      <!-- Right  -->
+      <div class="hidden w-[30%] xl:block">
+        <!-- Search  -->
+        <div class="relative m-2">
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-600"
+          ></i>
+          <input
+            type="search"
+            placeholder="Search Twitter"
+            class="w-full h-9 text-sm text-gray-100 rounded-full pl-12 pb-1 focus:outline-none font-normal bg-gray-200 dark:bg-dim-400 border-gray-200 dark:border-dim-400"
+          />
+        </div>
+        <!-- Search  -->
+        <!-- What's happening  -->
+        <div class="question">
+          <h3 class="hashtags">What's happening</h3>
+
+          <div class="hashtags">
+            <h4>#Egypt</h4>
+            <p class="text-xs text-gray-400">30.0K Tweets</p>
+          </div>
+          <div class="hashtags">
+            <h4>#Palestine</h4>
+            <p class="text-xs text-gray-400">100.0K Tweets</p>
+          </div>
+          <div class="hashtags">
+            <h4>#Korea</h4>
+            <p class="text-xs text-gray-400">5.0K Tweets</p>
+          </div>
+        </div>
+        <!-- What's happening  -->
+        <!-- Who to follow  -->
+        <div class="question">
+          <h3 class="hashtags">Who to follow</h3>
+          <div
+            class="p-5 border-b border-gray-200 dark:border-dim-200 flex justify-between items-center"
+          >
+            <!-- one folower  -->
+            <div class="flex">
+              <!-- User Image  -->
+              <img
+                src="https://avatars.githubusercontent.com/u/144877614?s=400&u=419bd295fe44eefeb3387c7f9a8b8ea97f0957d9&v=4"
+                alt="avatar"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="ml-2 text sm ">
+                <h5 class=" text-gray-900 dark:text-white font-bold">
+                  rehameid
+                </h5>
+                <p class="text-gray-400">@rehameid2001</p>
+              </div>
+            </div>
+
+            <!-- follow button  -->
+            <a href="
+             " class="text-xs font-bold text-blue-400 px-4 py-1 
+             rounded-full border-2 border-blue-400">
+            Follow </a>
+
+          </div>
+
+          <div
+            class="p-5 border-b border-gray-200 dark:border-dim-200 flex justify-between items-center"
+          >
+            <!-- one folower  -->
+            <div class="flex">
+              <!-- User Image  -->
+              <img
+                src="https://avatars.githubusercontent.com/u/144877614?s=400&u=419bd295fe44eefeb3387c7f9a8b8ea97f0957d9&v=4"
+                alt="avatar"
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="ml-2 text sm ">
+                <h5 class=" text-gray-900 dark:text-white font-bold">
+                  rehameid
+                </h5>
+                <p class="text-gray-400">@rehameid2001</p>
+              </div>
+            </div>
+
+            <!-- follow button  -->
+            <a href="
+             " class="text-xs font-bold text-blue-400 px-4 py-1 
+             rounded-full border-2 border-blue-400">
+            Follow </a>
+
+          </div>
+
+          <div
+            class="p-5 border-b border-gray-200 
+            dark:border-dim-200 "
+          >
+            <!-- loading folower  -->
+            <div class="flex gap-x-4 animate-pulse">
+              <div class="rounded-full bg-gray-400 h-12 w-12">
+
+              </div>
+              <div class="flex-1 space-y-2 py-1">
+                <div class="h-4 bg-gray-400 rounded w-5/6"></div>
+                <div class="h-4 bg-gray-400 rounded w-3/4"></div>
+                <div class="h-4 bg-gray-400 rounded w-4/6"></div>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Show more -->
+          <div class="text-gray-400 p-3 cursor-pointer">Show more</div>
+
+        </div>
+        <!-- Who to follow  -->
+
+      <!-- Right  -->
+    </div>
+
+  </div><
+    <!-- Container  -->
+  </body>
+</html>
